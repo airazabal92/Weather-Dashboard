@@ -6,5 +6,20 @@
 }
 
 h2 {
-  font-size: 0.75 rem;
+  font-size: 1.4rem;
+}
+
+#searchCol {
+  background-color: rgb(235, 233, 233);
+}
+
+#pastSearches {
+  width: 97%;
+}
+
+.weekForecast {
+  float: left;
+  max-width: 10rem;
+  padding: 3px;
+  margin-left: 30px;
 }

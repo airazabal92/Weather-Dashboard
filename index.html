@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
     <!-- Custom CSS -->
     <link href="assets/style.css" rel="stylesheet">
 
@@ -29,29 +33,79 @@
         <main>
             <!-- Main content row -->
             <div class="row">
-                <div class="col-sm-12 col-md-3">
+                <div id="searchCol" class="col-sm-12 col-md-3">
                     <!-- Search bar for city input -->
                     <form>
-                        <div class="form-group p-3">
+                        <div class="form-group pl-3 pr-3 pt-3">
                             <h2>Search for a City:</h2>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Recipient's username"
-                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <input type="text" class="form-control" aria-label="Search for a city">
                                 <div class="input-group-append">
-                                    <button class="btn btn-outline-secondary" type="button">Button</button>
+                                    <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
                                 </div>
                             </div>
                         </div>
                     </form>
 
-
-
+                    <!-- List of past searches -->
+                    <ul class="list-group pl-3" id="pastSearches">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
                 </div>
 
-                <div class="col-sm-12 col-md-9 mt-2">
+                <div class="col-sm-12 col-md-9 mt-4">
                     <div class="card">
                         <div class="card-body">
-                            This is some text within a card body.
+                            <h3>Name of city</h3>
+                            <p>Temperature: </p>
+                            <p>Humidity: </p>
+                            <p>Wind Speed: </p>
+                            <p>UV Index: </p>
+                        </div>
+                    </div>
+                    <h3>5-Day Forecast</h3>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="weekForecast card text-white bg-primary mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            <div class="weekForecast card text-white bg-primary mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            <div class="weekForecast card text-white bg-primary mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            <div class="weekForecast card text-white bg-primary mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            <div class="weekForecast card text-white bg-primary mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
