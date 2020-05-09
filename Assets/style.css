@@ -1,0 +1,10 @@
+#siteHeader {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #343a40;
+  color: white;
+}
+
+h2 {
+  font-size: 0.75 rem;
+}
