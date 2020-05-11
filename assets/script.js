@@ -37,7 +37,7 @@ $(document).ready(function () {
     clearValues();
 
     var queryURL =
-      "http://api.openweathermap.org/data/2.5/weather?q=" +
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
       userCityInput +
       "&appid=4f8e55cc1da3ca266b20bb0a49484fa9";
 
@@ -61,7 +61,7 @@ $(document).ready(function () {
       // Add weather icon
       var currentIconId = response.weather[0].icon;
       var currentIconLink =
-        "http://openweathermap.org/img/wn/" + currentIconId + ".png";
+        "https://openweathermap.org/img/wn/" + currentIconId + ".png";
       var currentIconImg = $("<img>").attr("src", currentIconLink);
       $("#cityName").append(currentIconImg);
 
@@ -97,7 +97,7 @@ $(document).ready(function () {
   // Connect to the OpenWeather UV Index API
   function getUVIndex() {
     var queryURL =
-      "http://api.openweathermap.org/data/2.5/uvi?lat=" +
+      "https://api.openweathermap.org/data/2.5/uvi?lat=" +
       cityLat +
       "&lon=" +
       cityLon +
@@ -151,13 +151,18 @@ $(document).ready(function () {
     $("#humidity").empty();
     $("#windSpeed").empty();
     $("#UVIndex").empty();
+    $("#day1Icon").empty();
+    $("#day2Icon").empty();
+    $("#day3Icon").empty();
+    $("#day4Icon").empty();
+    $("#day5Icon").empty();
   }
 });
 
 // Add information for 5-Day forecast
 function getFiveDayForecast() {
   var queryURL =
-    "http://api.openweathermap.org/data/2.5/forecast?q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
     userCityInput +
     "&units=imperial" +
     "&appid=4f8e55cc1da3ca266b20bb0a49484fa9";
