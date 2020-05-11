@@ -185,7 +185,7 @@ function getFiveDayForecast() {
     // Add weather icon for day 1
     var day1IconId = response.list[3].weather[0].icon;
     var day1IconLink =
-      "http://openweathermap.org/img/wn/" + day1IconId + ".png";
+      "https://openweathermap.org/img/wn/" + day1IconId + ".png";
     var day1IconImg = $("<img>").attr("src", day1IconLink);
     $("#day1Icon").append(day1IconImg);
 
@@ -211,7 +211,7 @@ function getFiveDayForecast() {
     // Add weather icon for day 2
     var day2IconId = response.list[11].weather[0].icon;
     var day2IconLink =
-      "http://openweathermap.org/img/wn/" + day2IconId + ".png";
+      "https://openweathermap.org/img/wn/" + day2IconId + ".png";
     var day2IconImg = $("<img>").attr("src", day2IconLink);
     $("#day2Icon").append(day2IconImg);
 
@@ -237,7 +237,7 @@ function getFiveDayForecast() {
     // Add weather icon for day 3
     var day3IconId = response.list[19].weather[0].icon;
     var day3IconLink =
-      "http://openweathermap.org/img/wn/" + day3IconId + ".png";
+      "https://openweathermap.org/img/wn/" + day3IconId + ".png";
     var day3IconImg = $("<img>").attr("src", day3IconLink);
     $("#day3Icon").append(day3IconImg);
 
@@ -263,7 +263,7 @@ function getFiveDayForecast() {
     // Add weather icon for day 4
     var day4IconId = response.list[27].weather[0].icon;
     var day4IconLink =
-      "http://openweathermap.org/img/wn/" + day4IconId + ".png";
+      "https://openweathermap.org/img/wn/" + day4IconId + ".png";
     var day4IconImg = $("<img>").attr("src", day4IconLink);
     $("#day4Icon").append(day4IconImg);
 
@@ -289,7 +289,7 @@ function getFiveDayForecast() {
     // Add weather icon for day 5
     var day5IconId = response.list[35].weather[0].icon;
     var day5IconLink =
-      "http://openweathermap.org/img/wn/" + day5IconId + ".png";
+      "https://openweathermap.org/img/wn/" + day5IconId + ".png";
     var day5IconImg = $("<img>").attr("src", day5IconLink);
     $("#day5Icon").append(day5IconImg);
 
