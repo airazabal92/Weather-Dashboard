@@ -12,6 +12,4 @@ The application uses the OpenWeather API to retrieve weather data for cities tha
 - The future weather conditions present a 5-day forecast with the date, an icon representation of the weather conditions, the temperature, and the humidity.
 - When the user opens the weather dashboard, they are presented with the last searched city forecast.
 
-## GitHub Page
-
 [View the deployed application](https://airazabal92.github.io/Weather-Dashboard/)
